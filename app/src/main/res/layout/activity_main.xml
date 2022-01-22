@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7DA"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/numbers"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="24sp"
+       android:padding="16dp"
+       android:gravity="center_vertical"
+       android:textStyle="bold"
+       android:background="#FD8E09"
+       android:text="Numbers"/>
+
+    <TextView
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#379237"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Family Members"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8800A0"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Colors"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16AFCA"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Phrases"
+        android:textSize="24sp" />
+
+</LinearLayout>
