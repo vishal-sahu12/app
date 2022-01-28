@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         family.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent numberIntent = new Intent(getBaseContext(),FamilyActivity.class);
-                startActivity(numberIntent);
+                Intent familyIntent = new Intent(getBaseContext(),FamilyActivity.class);
+                startActivity(familyIntent);
             }
         });
         // For COLORS
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent numberIntent = new Intent(getBaseContext(),ColorsActivity.class);
-                startActivity(numberIntent);
+                Intent colorsIntent = new Intent(getBaseContext(),ColorsActivity.class);
+                startActivity(colorsIntent);
             }
         });
         // For PHRASES
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
         phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent numberIntent = new Intent(getBaseContext(),PhrasesActivity.class);
-                startActivity(numberIntent);
+                Intent phrasesIntent = new Intent(getBaseContext(),PhrasesActivity.class);
+                startActivity(phrasesIntent);
             }
         });
     }

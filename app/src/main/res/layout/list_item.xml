@@ -2,26 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/miwok"
-        tools:text="lutti"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        tools:visibility="visible"/>
-    <TextView
-        android:id="@+id/default_text"
-        tools:text="One"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:padding="16dp">
 
-        android:layout_marginLeft="16dp" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/miwok"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/default_text"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            tools:text="One" />
+    </LinearLayout>
+
 
 </LinearLayout>

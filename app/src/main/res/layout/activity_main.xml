@@ -10,47 +10,52 @@
 
    <TextView
        android:id="@+id/numbers"
-       android:layout_marginTop="10dp"
+       android:layout_weight="1"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:textSize="24sp"
        android:padding="16dp"
+       style="@style/basic_text"
+       android:textSize="40sp"
        android:gravity="center_vertical"
-       android:textStyle="bold"
-       android:background="#FD8E09"
+       android:background="@color/category_numbers"
        android:text="Numbers"/>
 
     <TextView
         android:id="@+id/family"
+        android:layout_weight="1"
+        android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#379237"
+        android:background="@color/category_family"
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="Family Members"
-        android:textStyle="bold"
-        android:textSize="24sp" />
+       style="@style/basic_text" />
 
     <TextView
         android:id="@+id/colors"
+        android:layout_weight="1"
+        android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8800A0"
+        android:background="@color/category_colors"
         android:padding="16dp"
-        android:textStyle="bold"
+        style="@style/basic_text"
         android:gravity="center_vertical"
         android:text="Colors"
-        android:textSize="24sp" />
+        />
 
     <TextView
         android:id="@+id/phrases"
+        android:layout_weight="1"
+        android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#16AFCA"
+        android:background="@color/category_phrases"
         android:padding="16dp"
-        android:textStyle="bold"
+        style="@style/basic_text"
         android:gravity="center_vertical"
         android:text="Phrases"
-        android:textSize="24sp" />
+         />
 
 </LinearLayout>

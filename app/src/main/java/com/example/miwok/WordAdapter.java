@@ -31,7 +31,6 @@ public class WordAdapter extends ArrayAdapter<word> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
         word currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
@@ -40,15 +39,22 @@ public class WordAdapter extends ArrayAdapter<word> {
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView defualtTextView = (TextView) listItemView.findViewById(R.id.default_text);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
         defualtTextView.setText(currentWord.getDefaultTranslation());
 
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-      //  ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-        // Get the image resource ID from the current AndroidFlavor object and
-        // set the image to iconView
-     //   iconView.setImageResource(currentAndroidFlavor.getImageResourceId());
+
+        //ImageView
+        ImageView iconView = listItemView.findViewById(R.id.image_view);
+
+        //It checks the wordlist that it contains image or not
+//        if contains then it sets id to imageview and sets visibility to VISIBLE
+        if(currentWord.hasImage()) {
+            iconView.setImageResource(currentWord.getImageResourceId());
+            iconView.setVisibility(View.VISIBLE);
+        }
+        // if wordlist does not contain the imageview then it sets its visibility to GONE
+        else {
+            iconView.setVisibility(View.GONE);
+        }
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
