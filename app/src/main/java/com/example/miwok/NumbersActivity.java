@@ -34,7 +34,7 @@ public class NumbersActivity extends AppCompatActivity {
 // Making LinearLayot In Java Code
 //        LinearLayout rootView =(LinearLayout) findViewById(R.id.rootview);
 
-        WordAdapter itemAdapter = new WordAdapter(this,words);
+        WordAdapter itemAdapter = new WordAdapter(this,words,R.color.category_numbers);
        ListView listView = findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
        //ListView

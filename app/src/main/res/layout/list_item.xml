@@ -4,20 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/tan_background"
-    android:padding="16dp">
+
+    android:background="@color/tan_background">
 
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:scaleType="centerInside"
+
         android:src="@drawable/ic_launcher" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/category_numbers"
         android:paddingLeft="16dp">
 
         <TextView
@@ -27,7 +30,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="16dp"
             android:gravity="center_vertical"
-            android:textSize="30sp"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
             tools:text="lutti" />
 
         <TextView
@@ -38,8 +42,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
+            android:textSize="30sp"
             tools:text="One" />
     </LinearLayout>
-
 
 </LinearLayout>
