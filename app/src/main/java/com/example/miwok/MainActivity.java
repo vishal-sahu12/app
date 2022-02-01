@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                Toast mes = Toast.makeText(MainActivity.this,"playing",Toast.LENGTH_SHORT);
+//                mes.show();
                 Intent phrasesIntent = new Intent(getBaseContext(),PhrasesActivity.class);
                 startActivity(phrasesIntent);
             }

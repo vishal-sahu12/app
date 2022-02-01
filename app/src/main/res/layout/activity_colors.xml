@@ -4,6 +4,8 @@
     android:id="@+id/list_colors"
     android:orientation="vertical"
     android:numColumns="2"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NumbersActivity"/>
