@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -73,4 +74,34 @@ public class MainActivity extends AppCompatActivity {
 //        Intent number = new Intent(this,NumbersActivity.class);
 //        startActivity(number);
 //    }
-}
+
+        @Override
+        protected void onStart() {
+            super.onStart();
+            Log.v("MainActivity", "onStart");
+        }
+
+        @Override
+        protected void onResume() {
+            super.onResume();
+            Log.v("MainActivity", "onResume");
+        }
+
+        @Override
+        protected void onPause() {
+            super.onPause();
+            Log.v("MainActivity", "onPause");
+        }
+
+        @Override
+        protected void onStop() {
+            super.onStop();
+            Log.v("MainActivity", "onStop");
+        }
+
+        @Override
+        protected void onDestroy() {
+            super.onDestroy();
+            Log.v("MainActivity", "onDestroy");
+        }
+    }
