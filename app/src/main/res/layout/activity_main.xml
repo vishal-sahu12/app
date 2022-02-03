@@ -8,54 +8,78 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-   <TextView
-       android:id="@+id/numbers"
-       android:layout_weight="1"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:padding="16dp"
-       style="@style/basic_text"
-       android:textSize="40sp"
-       android:gravity="center_vertical"
-       android:background="@color/category_numbers"
-       android:text="Numbers"/>
-
-    <TextView
-        android:id="@+id/family"
-        android:layout_weight="1"
-        android:textSize="40sp"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_family"
-        android:gravity="center_vertical"
-        android:padding="16dp"
-        android:text="Family Members"
-       style="@style/basic_text" />
+        android:background="@color/category_numbers">
 
-    <TextView
-        android:id="@+id/colors"
-        android:layout_weight="1"
-        android:textSize="40sp"
+        <TextView
+            android:id="@+id/numbers"
+            style="@style/basic_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="Numbers"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_colors"
-        android:padding="16dp"
-        style="@style/basic_text"
-        android:gravity="center_vertical"
-        android:text="Colors"
-        />
+        android:background="@color/category_family">
 
-    <TextView
-        android:id="@+id/phrases"
-        android:layout_weight="1"
-        android:textSize="40sp"
+        <TextView
+            android:id="@+id/family"
+            style="@style/basic_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="Family Members"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_phrases"
-        android:padding="16dp"
-        style="@style/basic_text"
-        android:gravity="center_vertical"
-        android:text="Phrases"
-         />
+        android:background="@color/category_colors">
+
+        <TextView
+            android:id="@+id/colors"
+            style="@style/basic_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="Colors"
+            android:textSize="40sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases">
+
+        <TextView
+            android:id="@+id/phrases"
+            style="@style/basic_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="Phrases"
+            android:textSize="40sp" />
+    </FrameLayout>
+
 
 </LinearLayout>

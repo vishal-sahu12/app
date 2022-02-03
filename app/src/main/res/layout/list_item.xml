@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="@dimen/list_item_height"
+        android:layout_width="88dp"
         android:layout_height="@dimen/list_item_height"
         android:scaleType="centerInside"
         android:src="@drawable/ic_launcher" />
@@ -23,15 +23,16 @@
         android:layout_toRightOf="@id/image_view"
         android:orientation="vertical"
         android:background="@color/category_numbers"
-        android:paddingLeft="16dp">
+        >
 
         <TextView
             android:id="@+id/miwok"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_marginLeft="16dp"
+            android:layout_height="75dp"
+            android:paddingLeft="16dp"
             android:layout_weight="1"
             android:gravity="bottom"
+
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             tools:text="lutti" />
@@ -39,11 +40,11 @@
         <TextView
             android:id="@+id/default_text"
             android:layout_width="294dp"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:layout_below="@id/miwok"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp"
             android:layout_weight="1"
+
             android:gravity="top"
             android:textSize="30sp"
             tools:text="One" />
