@@ -8,6 +8,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -68,6 +69,7 @@ public class ColorsActivity extends AppCompatActivity {
         WordAdapter itemAdapter = new WordAdapter(this,colors,R.color.category_colors);
         ListView listView = findViewById(R.id.list_colors);
         listView.setAdapter(itemAdapter);
+        ImageView playButton = findViewById(R.id.play_button);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
