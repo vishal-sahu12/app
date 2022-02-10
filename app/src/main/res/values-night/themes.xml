@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Miwok" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#C0C0C0</item>
+        <item name="colorPrimary">@color/category_family</item>
         <item name="colorPrimaryVariant">@color/primary_dark_color</item>
         <item name="colorOnPrimary">@color/primary_color</item>
         <!-- Secondary brand color. -->
@@ -26,5 +26,11 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">30sp</item>
+    </style>
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicator">@android:color/black</item>
+        <item name="tabTextColor">@android:color/black</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabIndicatorHeight">2dp</item>
     </style>
 </resources>

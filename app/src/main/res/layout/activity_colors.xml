@@ -4,6 +4,7 @@
     android:id="@+id/list_colors"
     android:orientation="vertical"
     android:numColumns="2"
+    android:drawSelectorOnTop="true"
     android:focusableInTouchMode="false"
     android:focusable="false"
     android:layout_width="match_parent"

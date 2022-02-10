@@ -4,6 +4,7 @@
     android:id="@+id/list_phrases"
     android:orientation="vertical"
     android:numColumns="2"
+    android:drawSelectorOnTop="true"
     android:background="@color/category_phrases"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

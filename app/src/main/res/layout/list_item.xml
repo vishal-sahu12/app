@@ -39,12 +39,11 @@
 
         <TextView
             android:id="@+id/default_text"
-            android:layout_width="294dp"
-            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
             android:layout_below="@id/miwok"
             android:paddingLeft="16dp"
             android:layout_weight="1"
-
             android:gravity="top"
             android:textSize="30sp"
             tools:text="One" />
